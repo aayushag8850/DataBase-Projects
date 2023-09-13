@@ -1,0 +1,7 @@
+SELECT COUNT(DISTINCT ItemID)
+FROM (
+    SELECT ItemID
+    FROM Category
+    GROUP BY ItemID
+    HAVING COUNT(DISTINCT Category_Name) = 4
+);

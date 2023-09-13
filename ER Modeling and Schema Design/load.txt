@@ -1,0 +1,25 @@
+.separator |
+
+.import item.dat Items
+
+update Items set Name = null where description = "null";
+update Items set Started = null where description = "null";
+update Items set Ends = null where description = "null";
+update Items set Description = null where description = "null";
+update Items set Currently = null where description = "null";
+update Items set First_Bid = null where description = "null";
+update Items set Number_of_Bids = null where description = "null";
+update Items set Buy_Price = null where description = "null";
+update Items set UserID = null where description = "null";
+update Items set Location = null where description = "null";
+update Items set Country = null where description = "null";
+
+
+.import seller.dat Seller
+
+.import bidder.dat Bidder
+
+
+.import bid.dat Bids
+
+.import categories.dat Category
